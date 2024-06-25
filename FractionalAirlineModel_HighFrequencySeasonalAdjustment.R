@@ -92,6 +92,7 @@ process_series <- function(data, start_date, end_date, holiday_matrix, week_tis,
 ic_df <- read_preprocess_data("icstate_raw.xlsx", "df")
 uihis_start <- c(1987, 1)
 this_start <- c(1987, 1)
+### manually change this_end to latest!
 this_end <- c(2024, 9)
 
 ic_week_tis <- create_tis(ic_df$week, uihis_start)
